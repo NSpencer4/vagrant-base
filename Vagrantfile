@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
     config.ssh.forward_agent = true
 
-    config.vm.box = "ubuntu/xenial64"
+    config.vm.box = "ubuntu/trusty64"
     config.vm.network :forwarded_port, guest: 80, host: 2300
     config.vm.network :forwarded_port, guest: 443, host: 2500
     config.vm.network "private_network", ip: "192.168.88.88"
