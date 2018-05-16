@@ -19,8 +19,5 @@ echo ">>> Creating docroot directory..."
 mkdir -p /var/www/vagrant-base
 echo ">>> docroot directory created!"
 
-echo ">>> Restarting apache..."
-service apache2 restart
-
 echo ">>> Final restarts..."
 service apache2 restart
